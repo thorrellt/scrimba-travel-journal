@@ -1,0 +1,38 @@
+#root {
+  min-width: 100vw;
+}
+
+.App {
+  outline: 3px solid green;
+  max-width: 550px;
+  margin-inline: auto;
+  min-height: 90vh;
+}
+
+/******** 
+  NAVBAR 
+ ********/
+
+nav {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #F55A5A;
+  color: #ffffff;
+}
+
+nav img {
+  max-width: 24px;
+  max-height: 24px;
+  margin-inline: 7px;
+}
+
+nav h3 {
+  font-size: 14px;
+}
+
+.nav--title {
+
+}
+

@@ -2,11 +2,21 @@
   min-width: 100vw;
 }
 
+p,
+a {
+  font-size: 10.24px;
+  font-weight: 400;
+}
+
+p {
+  color: #2B283A;
+}
+
 .App {
-  outline: 3px solid green;
   max-width: 550px;
   margin-inline: auto;
   min-height: 90vh;
+  background-color: #ffffff;
 }
 
 /******** 
@@ -20,6 +30,7 @@ nav {
   justify-content: center;
   background-color: #F55A5A;
   color: #ffffff;
+  margin-block-end: 10px;
 }
 
 nav img {
@@ -28,11 +39,77 @@ nav img {
   margin-inline: 7px;
 }
 
-nav h3 {
+.nav--title {
   font-size: 14px;
 }
 
-.nav--title {
 
+/************* 
+  TRAVEL CARD 
+ *************/
+
+.card {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  outline: 2px solid black;
+  margin-block-start: 36px;
+  margin-inline: 40px;
 }
 
+.coverImg {
+  width: 125px;
+  height: 168px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Content */
+
+.content {
+  margin-inline-start: 20px;
+}
+
+.location {
+  flex-basis: 100%;
+}
+
+.gpsMarker {
+  width: 7px;
+}
+
+.location p {
+  display: inline;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 10.24px;
+  line-height: 12px;
+  letter-spacing: 0.17em;
+  margin-inline-start: 4px;
+}
+
+.location a {
+  margin-inline-start: 8px;
+}
+
+.content h1 {
+  margin-block: 0;
+  flex-basis: 100%;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.dates {
+  margin-block: 10px 0;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 12px;
+  flex-basis: 100%;
+}
+
+.description {
+  font-style: normal;
+  line-height: 150%;
+}

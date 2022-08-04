@@ -15,8 +15,8 @@ p {
 .App {
   max-width: 550px;
   margin-inline: auto;
-  min-height: 90vh;
   background-color: #ffffff;
+  padding-block-end: 10px;
 }
 
 /******** 
@@ -40,7 +40,10 @@ nav img {
 }
 
 .nav--title {
-  font-size: 14px;
+  font-weight: 500;
+  font-size: 14.4608px;
+  line-height: 18px;
+  letter-spacing: -0.075em;
 }
 
 
@@ -52,9 +55,18 @@ nav img {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  outline: 2px solid black;
-  margin-block-start: 36px;
+  padding-block: 0 18px;
+  border-bottom: 1px solid #F5F5F5;
+  margin-block: 18px 0;
   margin-inline: 40px;
+}
+
+div.card:nth-child(2) {
+  margin-block-start: 36px;
+}
+
+div.card:last-child {
+  border-bottom: none;
 }
 
 .coverImg {

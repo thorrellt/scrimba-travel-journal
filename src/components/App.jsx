@@ -2,14 +2,19 @@ import { useState } from 'react'
 import '../styles/App.css'
 import Navbar from './Navbar'
 import Card from './Card'
+import cardData from '../data.js'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const cards = cardData.map(card =>{
+    return <Card
+      {...card}
+      />
+  })
 
   return (
     <div className="App">
       <Navbar />
-      <Card />
+      {cards}
     </div>
   )
 }
